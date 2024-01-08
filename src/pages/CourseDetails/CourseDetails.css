@@ -1,0 +1,136 @@
+.course-details-page {
+    min-height: 100vh;
+    padding: 40px 80px;
+}
+
+.course-details-page h1 {
+    font-size: 72px;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.course-details-page h3 {
+    font-size: 24px;
+    font-style: italic;
+    text-align: center;
+    color: #646464;
+    margin-bottom: 40px;
+}
+
+.course-description1 {
+    padding: 24px;
+    background-color: white;
+    font-size: 32px;
+    text-align: center;
+    border-radius: 24px;
+    margin-bottom: 56px;
+}
+
+.course-overview {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Features Styling */
+.features-container {
+    width: 65%;
+    background-color: white;
+    padding: 40px;
+    border-radius: 24px;
+}
+
+.features-container h2 {
+    font-size: 56px;
+    background-color: white;
+    margin-bottom: 32px;
+}
+.feature {
+    font-size: 24px;
+    background-color: white;
+    margin-bottom: 20px;
+}
+
+/* Sign up Styling */
+.signup-container {
+    width: 30%;
+    height: fit-content;
+    background-color: #FEBD2F;
+    padding: 40px;
+    border-radius: 24px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.signup-container p {
+    background-color: #FEBD2F;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.signup-container button {
+    width: 75%;
+    align-self: center;
+    border: none;
+    border-radius: 24px;
+    padding: 16px;
+    font-size: 24px;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+}
+
+/* Tablet Display Setting */
+@media screen and (max-width: 1000px) {
+    .course-details-page h3 {
+        font-size: 18px;
+    }
+
+    .course-description1 {
+        font-size: 24px;
+    }
+
+    .course-overview {
+        flex-direction: column;
+    }
+
+    .features-container {
+        width: 100%;
+        margin-bottom: 56px;
+    }
+
+    .signup-container {
+        width: 100%;
+    }
+
+    .signup-container p {
+        font-size: 24px;
+    }
+}
+
+/* Small Phone Display Setting */
+@media screen and (max-width: 400px) {
+    .course-details-page {
+        padding: 20px 40px;
+    }
+
+    .course-details-page h1 {
+        font-size: 48px;
+    }
+
+    .course-description1 {
+        font-size: 18px;
+    }
+
+    .features-container h2 {
+        font-size: 40px;
+    }
+    .feature {
+        font-size: 18px;
+    }
+
+    .signup-container p {
+        font-size: 18px;
+    }
+}

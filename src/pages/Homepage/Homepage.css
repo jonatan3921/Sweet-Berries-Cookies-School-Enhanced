@@ -1,0 +1,158 @@
+.homepage-page {
+    min-height: 100vh;
+    padding: 40px 80px;
+}
+
+.banner {
+    margin: 40px 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.banner-heading {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.banner-heading h1 {
+    width: 80%;
+    font-size: 64px;
+    font-weight: 500;
+    margin-bottom: 24px;
+}
+
+.banner-heading p {
+    width: 85%;
+    font-size: 24px;
+    color: #646464;
+}
+
+.banner img {
+    width: 50%;
+    border-radius: 24px;
+}
+
+
+/* Card Section Styling */
+.cards-container {
+    margin: 96px 0 40px 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 31%;
+    min-height: 300px;
+    background-color: white;
+    padding: 40px 40px 64px 40px;
+    border-radius: 24px;
+}
+
+/* Special Card Styling */
+.special-card {
+    background-color: #FEBD2F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.explore {
+    color: black;
+    text-decoration: none;
+}
+
+.explore h2 {
+    background-color: #FEBD2F;
+    font-size: 46px;
+    font-weight: 500;
+}
+
+/* Courses Cards Styling */
+.offer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.offer h3 {
+    background-color: white;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.offer p {
+    color: #646464;
+    background-color: white;
+    font-size: 18px;
+    margin-bottom: 32px;
+}
+
+.offer button {
+    align-self: flex-start;
+    border: 1px solid #dcdcdc;
+    border-radius: 32px;
+    background-color: white;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 16px 24px;
+    cursor: pointer;
+}
+
+.icon {
+    font-size: 72px;
+    color: #FEBD2F;
+    position: absolute;
+    top: -32px;
+    right: 48px;
+    background: none;
+}
+
+/* Tablet Display Setting */
+@media screen and (max-width: 1000px) {
+    .banner {
+        margin-top: 0;
+        flex-direction: column;
+    }
+
+    .banner-heading {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 56px;
+    }
+
+    .banner img {
+        width: 100%;
+    }
+    /* Cards Styling */
+    .card {
+        width: 46%;
+    }
+}
+
+/* Small Phone Display Setting */
+@media screen and (max-width: 400px) {
+    .banner-heading h1 {
+        font-size: 32px;
+    }
+
+    .banner-heading p {
+        font-size: 16px;
+    }
+
+    .banner img {
+        width: 125%;
+    }
+
+    .card {
+        width: 100%;
+        margin-bottom: 32px;
+    }
+    
+}

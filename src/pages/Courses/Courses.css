@@ -1,0 +1,47 @@
+.courses-page {
+    min-height: 100vh;
+    padding: 40px 80px;
+}
+
+.courses-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.courses-heading {
+    width: 75%;
+    text-align: center;
+}
+
+.courses-heading h2 {
+    font-size: 64px;
+    font-weight: 500;
+}
+
+.cooking-essentials {
+    top: 175px;
+}
+
+
+/* Tablet Display Setting */
+@media screen and (max-width: 1000px) {
+    .cooking-essentials {
+        top: 0;
+    }
+    .teen-kitchen {
+        left: 150px;
+    }
+}
+
+/* Small Phone Display Setting */
+@media screen and (max-width: 400px) {
+    .courses-heading h2 {
+        font-size: 40px;
+    }
+
+    .teen-kitchen {
+        left: 0;
+    }
+}

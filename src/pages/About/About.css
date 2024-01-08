@@ -1,0 +1,198 @@
+.about-page {
+    min-height: 100vh;
+    margin: 40px 80px;
+}
+
+/* About Banner Styling */
+.about-banner {
+    width: 100%;
+    margin-bottom: 96px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-banner >:nth-child(1) {
+    width: 45%;
+}
+
+.about-banner >:nth-child(2) {
+    width: 50%;
+    border-radius: 16px;
+}
+
+/* About title Styling */
+.about-page >:nth-child(2) {
+    text-align: center;
+    font-size: 72px;
+    font-weight: 500;
+    margin-bottom: 24px;
+}
+
+/* About Description Box Styling */
+.about-description {
+    width: 100%;
+    min-height: 200px;
+    padding: 32px;
+    background-color: white;
+    border-radius: 24px;
+    margin-bottom: 96px;
+}
+
+.about-description >:nth-child(1) {
+    margin-bottom: 32px;
+}
+
+.about-description p {
+    color: #646464;
+    background-color: white;
+    font-size: 28px;
+    text-align: center;
+}
+
+
+/* Courses title Styling */
+.about-page >:nth-child(4) {
+    font-size: 72px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+
+/* Boxes Container Styling */
+.about-courses {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-courses >:nth-child(2) {
+    position: relative;
+    top: 350px;
+}
+
+.about-courses >:nth-child(4) {
+    position: relative;
+    top: 350px;
+}
+
+/* Courses boxes styling */
+.about-course-box {
+    width: 45%;
+    background-color: white;
+    padding: 24px;
+    margin-bottom: 96px;
+    min-height: 300px;
+    border-radius: 24px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.about-course-box div {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-course-box h2 {
+    background-color: white;
+    font-size: 48px;
+    margin-right: 32px;
+}
+.about-icon {
+    background-color: white;
+    color: #FEBD2F;
+    font-size: 64px;
+}
+
+.about-course-box p {
+    color: #646464;
+    background-color: white;
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 24px;
+}
+
+/* Tablet Display Setting */
+@media screen and (max-width: 1000px) {
+    .about-banner >:nth-child(1) {
+        display: none;
+    }
+
+    .about-banner >:nth-child(2) {
+        width: 100%;
+    }
+
+    .about-description p {
+        font-size: 24px;
+    }
+
+    .about-course-box {
+        width: 47%;
+    }
+
+    .about-course-box h2 {
+        font-size: 28px;
+    }
+
+    .about-icon {
+        font-size: 42px;
+    }
+
+    .about-course-box p {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .about-page {
+        margin: 20px 40px;
+    }
+    .about-banner {
+        margin-bottom: 40px;
+    }
+    .about-banner >:nth-child(2) {
+        width: 100%;
+    }
+
+    .about-page >:nth-child(2) {
+        font-size: 56px;
+    }
+    .about-description {
+        margin-bottom: 40px;
+    }
+    .about-description p {
+        font-size: 18px;
+    }
+
+    .about-page >:nth-child(4) {
+        font-size: 56px;
+    }
+
+    .about-courses {
+        flex-direction: column;
+    }
+    .about-course-box {
+        width: 85%;
+    }
+    .about-course-box div {
+        margin-bottom: 12px;
+    }
+    .about-course-box h2 {
+        font-size: 24px;
+    }
+    .about-course-box p {
+        font-size: 16px;
+    }
+    .about-courses >:nth-child(2) {
+        top: 0;
+        align-self: flex-end;
+    }
+    .about-courses >:nth-child(4) {
+        top: 0;
+        align-self: flex-end;
+    }
+}
